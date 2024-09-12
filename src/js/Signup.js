@@ -24,6 +24,7 @@ export default {
           })
           if (response.ok) {
             alert('Conta criada com sucesso!')
+            this.$router.push('/login')
           } else {
             const errorData = await response.json()
             alert(errorData.error || 'Erro ao criar conta.')

@@ -2,7 +2,7 @@
     <div class="login">
       <h1>Login</h1>
       <div class="login-box">
-        <input v-model="username" placeholder="Usuário" type="text" />
+        <input v-model="email" placeholder="Email" type="email" />
         <input v-model="password" placeholder="Senha" type="password" />
         <button @click="login">Entrar</button>
       </div>
