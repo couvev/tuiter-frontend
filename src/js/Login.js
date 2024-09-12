@@ -21,6 +21,7 @@ export default {
               })
             })
             if (response.ok) {
+              localStorage.setItem('isAuthenticated', 'true')
               alert('Login bem-sucedido!')
               this.$router.push('/')
             } else {
