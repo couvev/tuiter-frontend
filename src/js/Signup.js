@@ -11,7 +11,7 @@ export default {
     async signup() {
       if (this.email.trim() && this.username.trim() && this.password.trim()) {
         try {
-          const response = await fetch('http://localhost:5000/api/signup', {
+          const response = await fetch(`${process.env.VUE_APP_API_URL}/signup`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
